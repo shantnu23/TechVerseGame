@@ -2,7 +2,7 @@ const gameContainer = document.querySelector('.game-container');
 const ScoreElement = document.getElementById('Score'); 
 const spawnTime = 1500; 
 const monsterCount = 8; 
-let score = 0; 
+let Score = 0; 
 
 function getRandomPosition() {
     const maxX = gameContainer.clientWidth - 100; 
