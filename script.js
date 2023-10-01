@@ -1,7 +1,7 @@
 const gameContainer = document.querySelector('.game-container');
 const scoreElement = document.getElementById('score'); 
 const spawnTime = 1500; 
-const monsterCount = 5; 
+const monsterCount = 8; 
 let score = 0; 
 
 function getRandomPosition() {
