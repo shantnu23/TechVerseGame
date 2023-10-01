@@ -1,8 +1,8 @@
 const gameContainer = document.querySelector('.game-container');
-const ScoreElement = document.getElementById('Score'); 
+const scoreElement = document.getElementById('score'); 
 const spawnTime = 1500; 
 const monsterCount = 8; 
-let Score = 0; 
+let score = 0; 
 
 function getRandomPosition() {
     const maxX = gameContainer.clientWidth - 100; 
@@ -35,8 +35,8 @@ function spawnMonsters() {
             monster.style.background = `url('img/explosion.gif') center/cover no-repeat`; 
             monster.style.pointerEvents = 'none';
 
-            Score++;
-            ScoreElement.textContent = Score; 
+            score++;
+            scoreElement.textContent = score; 
 
             setTimeout(() => {
                 monster.remove(); 
